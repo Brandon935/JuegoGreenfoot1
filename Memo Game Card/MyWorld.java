@@ -1,4 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.MouseInfo;
+
+     import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class MyWorld here.
@@ -17,53 +19,41 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 390, 1); 
-
-        backOfTheCard backOfTheCard = new backOfTheCard();
-        backOfTheCard backOfTheCard2 = new backOfTheCard();
-        addObject(backOfTheCard2,340,100);
-        backOfTheCard backOfTheCard3 = new backOfTheCard();
-        addObject(backOfTheCard3,466,99);
-        backOfTheCard backOfTheCard4 = new backOfTheCard();
-        addObject(backOfTheCard4,194,224);
-        backOfTheCard backOfTheCard5 = new backOfTheCard();
-        addObject(backOfTheCard5,331,224);
-        backOfTheCard backOfTheCard6 = new backOfTheCard();
-        addObject(backOfTheCard6,439,226);
-        backOfTheCard5.setLocation(347,208);
-        addObject(backOfTheCard6,465,224);
-        backOfTheCard5.setLocation(351,245);
-        backOfTheCard5.setLocation(341,252);
-        addObject(backOfTheCard5,328,226);
-        addObject(backOfTheCard5,335,229);
-        backOfTheCard5.setLocation(333,220);
-        backOfTheCard6.setLocation(465,233);
-
+        //usaFlag usaFlag = new usaFlag();
+        
         prepare();
     }
-
-    public void act()
-    {
-        //USA 1
-        if(Greenfoot.mouseClicked(this))
-        {
-           int x = 733;
-           int y = 97;
-           addObject (new usaFlag(),x,y);
-           
-           
-        }
-    }
-
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
     private void prepare()
     {
-        backOfTheCard backOfTheCard = new backOfTheCard();
-        addObject(backOfTheCard,197,96);
-        backOfTheCard backOfTheCard2 = new backOfTheCard();
-        addObject(backOfTheCard2,733,97);
+        cartaAtras cartaAtras = new cartaAtras();
+        addObject(cartaAtras,374,131);
+        cartaAtras cartaAtras2 = new cartaAtras();
+        addObject(cartaAtras2,506,127);
+        removeObject(cartaAtras2);
+        CartaAtras2 cartaAtras22 = new CartaAtras2();
+        addObject(cartaAtras22,623,248);
+        CartaAtras3 cartaAtras3 = new CartaAtras3();
+        addObject(cartaAtras3,506,130);
+        CartaAtras3V1 cartaAtras3V1 = new CartaAtras3V1();
+        addObject(cartaAtras3V1,253,244);
+        CartaAtras4 cartaAtras4 = new CartaAtras4();
+        addObject(cartaAtras4,246,126);
+        CartaAtras4 cartaAtras42 = new CartaAtras4();
+        addObject(cartaAtras42,377,247);
+        removeObject(cartaAtras42);
+        CartaAtras4V1 cartaAtras4V1 = new CartaAtras4V1();
+        addObject(cartaAtras4V1,620,122);
+        CartaAtras5 cartaAtras5 = new CartaAtras5();
+        addObject(cartaAtras5,376,247);
+        CartaAtras5V1 cartaAtras5V1 = new CartaAtras5V1();
+        addObject(cartaAtras5V1,501,248);
     }
+    
+ 
     
 }
